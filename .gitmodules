@@ -1,0 +1,3 @@
+[submodule "external/c-csv"]
+	path = external/c-csv
+	url = git@gitlab.com:CuriousCorrelation/c-csv.git
