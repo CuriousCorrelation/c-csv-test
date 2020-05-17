@@ -1,0 +1,4 @@
+build
+debug
+*.sh
+.clangd
