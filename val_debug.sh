@@ -23,14 +23,14 @@ debug_command() {
                ./$executable
 }
 
-if [[ ! -e $dir ]]
+if [ ! -e $dir ]
 then
     mkdir $dir && debug_command
 else
     debug_command
 fi
 
-if [[ $? != 0 ]]
+if [ $? != 0 ]
 then
     echo "Failure."
 else

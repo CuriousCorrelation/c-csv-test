@@ -8,14 +8,14 @@ run_command() {
     cd $dir && cmake .. && cmake --build . && ./$executable
 }
 
-if [[ ! -e $dir ]]
+if [ ! -e $dir ]
 then
     mkdir $dir && run_command
 else
     run_command
 fi
 
-if [[ $? != 0 ]]
+if [ $? != 0 ]
 then
     echo "Failure."
 else
