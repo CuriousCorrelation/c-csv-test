@@ -29,3 +29,10 @@ then
 else
     debug_command
 fi
+
+if [[ $? != 0 ]]
+then
+    echo "Failure."
+else
+    echo "Success."
+fi
